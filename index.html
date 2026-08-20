@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aremu Oluwatobiloba | AI Engineer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <span class="logo">AREMU OLUWATOBILOBA</span>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+            <a href="#axiomat-ai">Axiomat AI</a>
+            <a href="files/resume.pdf" download class="btn-download-cv">Download CV</a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn">☰</button>
+    </nav>
+
+    <section class="hero">
+        <span class="badge">Backend &middot; AI Engineering</span>
+        <h1>Hi, I'm <span class="accent">Aremu</span></h1>
+        <p class="claim">AI Engineer who loves solving problems with AI</p>
+        <p class="hero-bio">Building production-ready RAG systems that turn website visitors into leads.</p>
+        <p class="hero-roles">Backend AI Engineering Intern &nbsp;|&nbsp; AI Facilitator &nbsp;|&nbsp; History
+            Undergraduate</p>
+        <div class="tags">
+            <span>RAG</span>
+            <span>Python</span>
+            <span>Embeddings</span>
+            <span>Hugging Face</span>
+        </div>
+        <div class="hero-buttons">
+            <a href="#axiomat-ai" class="btn btn-primary">Try Axiomat AI</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+            <a href="files/resume.pdf" download class="btn btn-outline">Download CV</a>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+<div class="divider"></div>
+
+<section class="about" id="about">
+    <p class="eyebrow">About</p>
+    <h2>A practical approach to AI and backend systems</h2>
+    <p class="about-text">I'm a History undergraduate at the University of Ilorin, self-taught in AI engineering,
+        currently working as a Backend AI Engineering Intern at FlyRank.</p>
+    <p class="about-text">At FlyRank, I containerize backend stacks with Docker and PostgreSQL, integrate LLMs into
+        production endpoints with reliability safeguards, and build AI agents with live tool connections. I also
+        facilitate AI Engineering and Generative AI training at LearnItDigitalHub.</p>
+    <div class="stats">
+        <div class="stat">
+            <p class="stat-value">University of Ilorin</p>
+            <p class="stat-label">History, Undergraduate</p>
+        </div>
+        <div class="stat">
+            <p class="stat-value">FlyRank AI</p>
+            <p class="stat-label">Backend AI Eng. Intern</p>
+        </div>
+        <div class="stat">
+            <p class="stat-value">20</p>
+            <p class="stat-label">Certification</p>
+        </div>
+        <div class="stat">
+            <p class="stat-value">Kwara State</p>
+            <p class="stat-label">Based in Nigeria</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section">
+    <div class="section-divider"></div>
+
+    <div class="section-header">
+        <p class="eyebrow">Projects</p>
+        <h2 class="section-title">Selected Work</h2>
+        <p class="section-subtitle">AI, RAG, and backend projects built with Python.</p>
+    </div>
+
+    <div class="projects-list">
+
+        <!-- Project 1: MyScholar AI (featured) -->
+        <article class="project-card featured">
+            <div class="project-image">
+                <span class="project-number">01</span>
+                <div class="project-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="project-body">
+                <h3 class="project-title">MyScholar AI</h3>
+                <p class="project-desc">A RAG-powered assistant that helps students find accurate answers from scholarly
+                    material instantly, deployed and used by real users.</p>
+                <button class="details-toggle" data-target="details-1">SHOW DETAILS</button>
+                <div class="project-tags" id="details-1" hidden>
+                    <span class="tag tag-accent">RAG</span>
+                    <span class="tag tag-accent">Embeddings</span>
+                    <span class="tag tag-accent">Hugging Face</span>
+                    <span class="tag tag-accent">Python</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-accent">View Project ↗</a>
+                    <a href="#" class="btn btn-outline">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 2: Inventory Management System -->
+        <article class="project-card">
+            <div class="project-image">
+                <span class="project-number">02</span>
+                <div class="project-icon project-icon-muted">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <ellipse cx="12" cy="5" rx="9" ry="3" />
+                        <path d="M3 5v14a9 3 0 0 0 18 0V5" />
+                    </svg>
+                </div>
+            </div>
+            <div class="project-body">
+                <h3 class="project-title">Inventory Management System</h3>
+                <p class="project-desc">His first project, built to learn backend architecture and authentication in
+                    Python. No frontend, the focus was purely on getting server-side logic right.</p>
+                <button class="details-toggle" data-target="details-2">SHOW DETAILS</button>
+                <div class="project-tags" id="details-2" hidden>
+                    <span class="tag tag-muted">Python</span>
+                    <span class="tag tag-muted">Authentication</span>
+                    <span class="tag tag-muted">Backend</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-outline">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section">
+    <div class="section-divider"></div>
+    <div class="section-header">
+        <p class="eyebrow">Skills</p>
+        <h2 class="section-title">Tools and Techniques</h2>
+    </div>
+
+    <div class="skills-grid-3">
+        <div class="skill-card">
+            <p class="skill-card-title">AI &amp; LLM</p>
+            <div class="skill-tags">
+                <span class="skill-tag">RAG Pipelines</span>
+                <span class="skill-tag">LLM Integration</span>
+                <span class="skill-tag">Prompt Engineering</span>
+                <span class="skill-tag">Semantic Search</span>
+                <span class="skill-tag">ChromaDB</span>
+                <span class="skill-tag">Sentence Transformers</span>
+                <span class="skill-tag">Groq API</span>
+                <span class="skill-tag">Ollama (LLaMA 3.1)</span>
+                <span class="skill-tag">Agentic AI Systems</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <p class="skill-card-title">Backend &amp; Database</p>
+            <div class="skill-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">REST API</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Uvicorn</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <p class="skill-card-title">Deployment</p>
+            <div class="skill-tags">
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Hugging Face Spaces</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="section">
+    <div class="section-divider"></div>
+
+    <div class="section-header">
+        <p class="eyebrow">Experience</p>
+        <h2 class="section-title">Where I've Worked</h2>
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-marker">
+                <span class="timeline-dot"></span>
+                <span class="timeline-line"></span>
+            </div>
+            <div class="timeline-content">
+                <p class="timeline-label">Internship</p>
+                <p class="timeline-role">FlyRank AI Backend Engineering Internship</p>
+                <p class="timeline-meta timeline-meta-active">REMOTE &nbsp;|&nbsp; ONGOING</p>
+                <ul class="timeline-list">
+                    <li>Containerized a FastAPI + PostgreSQL backend with Docker Compose, zero changes to the API layer
+                    </li>
+                    <li>Integrated an LLM into a backend endpoint with schema validation, timeouts, and retry logic</li>
+                    <li>Built a personal AI agent with a live tool connection and documented iteration</li>
+                    <li>Implemented JWT authentication via Supabase, signup, login, logout, protected routes</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-marker">
+                <span class="timeline-dot"></span>
+            </div>
+            <div class="timeline-content">
+                <p class="timeline-label">Facilitation</p>
+                <p class="timeline-role">Facilitator at LearnItDigitalHub</p>
+                <p class="timeline-meta">REMOTE</p>
+                <ul class="timeline-list">
+                    <li>Facilitating training in AI Engineering &amp; Intelligent Systems</li>
+                    <li>Facilitating training in Deep Learning &amp; Advanced Generative AI</li>
+                    <li>Responsible for expanding course curriculum with supplementary material to support student
+                        learning outcomes</li>
+                    <li>Delivering the AI Engineering track through structured video lessons and hands-on assignments
+                        covering prompt engineering, LLMs, RAG, and vector databases</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section id="certifications" class="section">
+    <div class="section-divider"></div>
+
+    <div class="section-header">
+        <p class="eyebrow">Certifications</p>
+        <h2 class="section-title">Anthropic Academy</h2>
+        <p class="section-subtitle">20 Anthropic Academy certifications covering AI fluency, Claude tooling, agents, and
+            MCP.</p>
+    </div>
+
+    <div class="cert-grid" id="cert-grid">
+        <!-- cards get inserted here by JS -->
+    </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section contact-section">
+    <div class="section-divider"></div>
+    <p class="eyebrow">Contact</p>
+    <h2 class="section-title">Get in touch</h2>
+    <p class="section-subtitle">Have a backend or AI project in mind? Let's connect.</p>
+    <div class="contact-links">
+        <a href="mailto:#" class="btn btn-outline">Email</a>
+        <a href="#" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p class="contact-location">Ilorin, Nigeria</p>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+    <div>
+        <p class="footer-name">Aremu Oluwatobiloba</p>
+        <p class="footer-tagline">Backend &amp; AI Engineering &middot; Ilorin, Nigeria</p>
+    </div>
+    <div class="footer-links">
+        <a href="#" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:#">Email</a>
+    </div>
+</footer>
+
+<!-- ============ AXIOMAT AI WIDGET ============ -->
+<button id="axiomatTrigger" class="axiomat-trigger" aria-label="Open Axiomat AI">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+    </svg>
+</button>
+
+<div id="axiomatPanel" class="axiomat-panel" hidden>
+    <div class="axiomat-header">
+        <div class="axiomat-header-info">
+            <div class="axiomat-bot-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+            </div>
+            <span class="axiomat-name">Axiomat AI</span>
+        </div>
+        <button id="axiomatClose" class="axiomat-close" aria-label="Close Axiomat AI">✕</button>
+    </div>
+
+    <div class="axiomat-body" id="axiomatBody">
+        <div class="axiomat-msg axiomat-msg-bot">Hi, I'm Axiomat AI. Ask me anything about Aremu's work and background.
+        </div>
+
+        <div class="axiomat-prompts">
+            <p class="axiomat-prompts-label">Try asking me</p>
+            <button type="button" class="axiomat-prompt-btn">Who is Aremu?</button>
+            <button type="button" class="axiomat-prompt-btn">What can Aremu build?</button>
+            <button type="button" class="axiomat-prompt-btn">Tell me about the FlyRank internship</button>
+        </div>
+    </div>
+
+    <form id="axiomatForm" class="axiomat-input-bar">
+        <textarea id="axiomatInput" placeholder="Ask something..." rows="1"></textarea>
+        <button type="submit" class="axiomat-send" aria-label="Send">➤</button>
+    </form>
+</div>
+
+</html>
