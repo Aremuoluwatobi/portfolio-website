@@ -123,5 +123,20 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', () => sendMessage(btn.textContent));
     });
 
+    // Open the Axiomat AI panel from the nav link and Hero button too
+    function openAxiomatPanel() {
+        axiomatPanel.hidden = false;
+    }
+
+    document.getElementById('navAxiomatBtn').addEventListener('click', (e) => {
+        e.preventDefault();
+        openAxiomatPanel();
+    });
+
+    document.getElementById('heroAxiomatBtn').addEventListener('click', (e) => {
+        e.preventDefault();
+        openAxiomatPanel();
+    });
+
 });
 
