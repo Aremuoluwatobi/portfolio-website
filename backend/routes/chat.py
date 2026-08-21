@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
-from canned_reply import get_canned_reply
-from llm_service import get_ai_reply
+from .canned_reply import get_canned_reply
+from .llm_service import get_ai_reply
 from persona import build_prompt
 
 router = APIRouter()

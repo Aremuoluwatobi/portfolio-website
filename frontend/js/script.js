@@ -81,14 +81,25 @@ document.addEventListener('DOMContentLoaded', () => {
         axiomatBody.scrollTop = axiomatBody.scrollHeight;
     }
 
-    function sendMessage(text) {
+    async function sendMessage(text) {
         if (!text.trim()) return;
         addMessage(text, 'user');
         axiomatInput.value = '';
-        // Placeholder reply until the FastAPI backend is connected
-        setTimeout(() => {
-            addMessage("(Backend not connected yet, this is a placeholder reply.)", 'bot');
-        }, 400);
+        axiomatInput.style.height = 'auto'; // reset the textarea height after sending
+
+        try {
+            const response = await fetch('http://127.0.0.1:8000/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: text }),
+            });
+
+            const data = await response.json();
+            addMessage(data.reply, 'bot');
+        } catch (error) {
+            console.error('Axiomat AI request failed:', error);
+            addMessage("Sorry, I'm having trouble connecting right now. Please try again.", 'bot');
+        }
     }
 
     axiomatForm.addEventListener('submit', (e) => {
