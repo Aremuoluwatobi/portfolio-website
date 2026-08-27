@@ -5,7 +5,7 @@ from routes.chat import router as chat_router
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://aremu-taiwo-portfolio.vercel.app/"],
+    allow_origins=["https://aremu-taiwo-portfolio.vercel.app"],
     allow_methods=["*"],
     allow_headers=["*"]
 )
