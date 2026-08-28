@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { title: "AI Fluency for Small Businesses", desc: "Develop AI fluency to increase impact and efficiency while staying true to mission and values.", date: "Aug 2026", link: "#" },
         { title: "AI Fluency for Educators", desc: "For faculty, instructional designers, and leaders applying AI Fluency to teaching/strategy.", date: "Aug 2026", link: "#" },
         { title: "Teaching AI Fluency", desc: "Teach and assess AI Fluency in instructor-led settings.", date: "Aug 2026", link: "#" },
-        { title: "AI Fluency for Nonprofits", desc: "Develop AI fluency to increase organizational impact while staying true to mission and values.", date: "Aug 2026", link: "#" },
+        { title: "AI Fluency for Nonprofits", desc: "Develop AI fluency to increase organizational impact while staying true to mission and values.", date: "Aug 2026", link: "https://verify.skilljar.com/c/68iwufty86rj" },
         { title: "AI Fluency for Builders", desc: "Develop AI fluency to own the full arc from problem to shipped solution, with more impact.", date: "Aug 2026", link: "#" },
         { title: "Claude Code 101", desc: "Use Claude Code effectively in your daily development workflow.", date: "Aug 2026", link: "#" },
         { title: "Claude Code in Action", desc: "Integrate Claude Code into your development workflow.", date: "Aug 2026", link: "#" },
