@@ -958,6 +958,6 @@ body {
     display: none;
 }
 
-#certifications {
-    padding-bottom: 20px;
+#contact {
+    min-height: 100vh;
 }
