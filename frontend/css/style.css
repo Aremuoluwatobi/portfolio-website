@@ -957,3 +957,7 @@ body {
 .axiomat-panel[hidden] {
     display: none;
 }
+
+#certifications {
+    padding-bottom: 20px;
+}
