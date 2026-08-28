@@ -43,7 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const certGrid = document.getElementById('cert-grid');
-    certifications.forEach(cert => {
+    const toggleBtn = document.getElementById('cert-toggle-btn');
+
+    const initialShow = 10;
+    let expanded = false; // tracks whether we're showing all or just the first 10
+
+    function renderCard(cert) {
         const card = document.createElement('div');
         card.className = 'cert-card';
         card.innerHTML = `
@@ -54,8 +59,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 <a href="${cert.link}" class="cert-verify" target="_blank" rel="noopener">Verify ↗</a>
             </div>
         `;
-        certGrid.appendChild(card);
+        return card;
+    }
+
+    function renderCerts() {
+        certGrid.innerHTML = ''; // clear grid before re-rendering
+
+        const certsToShow = expanded ? certifications : certifications.slice(0, initialShow);
+        certsToShow.forEach(cert => certGrid.appendChild(renderCard(cert)));
+
+        const remaining = certifications.length - initialShow;
+
+        if (remaining <= 0) {
+            toggleBtn.style.display = 'none'; // hide button if 10 or fewer certs total
+        } else {
+            toggleBtn.textContent = expanded ? 'Show less' : `Show ${remaining} more`;
+        }
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        expanded = !expanded;
+        renderCerts();
     });
+
+    renderCerts(); // initial render on page load
 
     // Axiomat AI widget
     const axiomatTrigger = document.getElementById('axiomatTrigger');

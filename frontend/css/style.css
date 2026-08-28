@@ -661,6 +661,29 @@ body {
     text-decoration: none;
 }
 
+.cert-toggle-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.cert-toggle-btn {
+    background: transparent;
+    border: 1px solid #4ade9c;
+    color: #4ade9c;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cert-toggle-btn:hover {
+    background: #4ade9c;
+    color: #0a0a0a;
+}
+
 @media (max-width: 640px) {
     .cert-grid {
         grid-template-columns: 1fr;
