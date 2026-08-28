@@ -224,9 +224,19 @@
                 <p class="timeline-role">FlyRank AI Backend Engineering Internship</p>
                 <p class="timeline-meta timeline-meta-active">REMOTE &nbsp;|&nbsp; ONGOING</p>
                 <ul class="timeline-list">
-                    <li>Containerized a FastAPI + PostgreSQL backend with Docker Compose, zero changes to the API layer
+                    <li>Built and deployed a full CRUD REST API in Python (FastAPI), covering create, read, update, and
+                        delete endpoints with request validation,
+                        then migrated the storage layer from in-memory data to a real SQLite database without changing
+                        the API's behavior.
+                        Documented the project with a README, endpoint table, and curl examples, published to a public
+                        GitHub repo.
                     </li>
-                    <li>Integrated an LLM into a backend endpoint with schema validation, timeouts, and retry logic</li>
+                    <li>Built a polite, production-style web scraping pipeline in Python (Requests, BeautifulSoup,
+                        Pydantic) with a full fetch, extract, normalize, validate,
+                        store, and report flow. Handles rate-limiting delays, retries failed pages without crashing the
+                        run,
+                        and produces a validated dataset of 60+ records with an honest run report.
+                    </li>
                     <li>Built a personal AI agent with a live tool connection and documented iteration</li>
                     <li>Implemented JWT authentication via Supabase, signup, login, logout, protected routes</li>
                 </ul>
