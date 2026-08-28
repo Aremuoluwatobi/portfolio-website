@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --color-bg: #0a0a0a;
     --color-text: #f2f0ea;
@@ -27,6 +31,7 @@ body {
     color: var(--color-text);
     font-family: var(--font-body);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* Global background grid + glow */
