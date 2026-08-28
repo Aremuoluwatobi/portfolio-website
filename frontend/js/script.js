@@ -94,10 +94,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     axiomatTrigger.addEventListener('click', () => {
         axiomatPanel.hidden = !axiomatPanel.hidden;
+        if (!axiomatPanel.hidden) {
+            axiomatTrigger.style.display = 'none';
+            document.body.style.overflow = 'hidden';
+        }
     });
 
     axiomatClose.addEventListener('click', () => {
         axiomatPanel.hidden = true;
+        axiomatTrigger.style.display = 'flex';
+        document.body.style.overflow = '';
     });
 
     function addMessage(text, sender) {
@@ -153,6 +159,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Open the Axiomat AI panel from the nav link and Hero button too
     function openAxiomatPanel() {
         axiomatPanel.hidden = false;
+        axiomatTrigger.style.display = 'none';
+        document.body.style.overflow = 'hidden';
     }
 
     document.getElementById('navAxiomatBtn').addEventListener('click', (e) => {

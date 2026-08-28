@@ -1,8 +1,4 @@
 * {
-    outline: 1px solid red;
-}
-
-* {
     box-sizing: border-box;
 }
 
@@ -947,7 +943,7 @@ body {
 /* Mobile: full-screen takeover, sitting below the nav bar */
 @media (max-width: 640px) {
     .axiomat-panel {
-        top: 64px;
+        top: 0;
         /* adjust to match your actual nav bar height */
         bottom: 0;
         right: 0;
