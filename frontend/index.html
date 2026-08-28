@@ -237,8 +237,26 @@
                         run,
                         and produces a validated dataset of 60+ records with an honest run report.
                     </li>
-                    <li>Built a personal AI agent with a live tool connection and documented iteration</li>
-                    <li>Implemented JWT authentication via Supabase, signup, login, logout, protected routes</li>
+                    <li>Implemented secure authentication using Supabase Auth and JWTs, including signup, login, logout,
+                        and protected routes guarded by token verification middleware.
+                        Documented and testable directly through Swagger UI.
+                    </li>
+                    <li>Designed and built a personal AI agent (a Weekly Review Assistant) that pulls its own data
+                        through a live connector rather than relying on manually pasted input, following a written
+                        design spec (job definition, eval cases, and risk guardrails) before building. Delivered with a
+                        documented build log tracking real iteration
+                    </li>
+                    <li>Integrated a large language model into a backend API endpoint that turns messy input into clean,
+                        schema-validated JSON output. Built with a strict parse-validate-repair pipeline (one automatic
+                        repair retry before failing safely), a 30-second timeout with custom retry logic (backoff and
+                        jitter, retrying only on timeouts/rate-limits/server errors), structured cost logging per
+                        request, and a kill switch for instant rollback. Verified against a written evaluation set with
+                        a real accuracy score.
+                    </li>
+                    <li>Containerized a FastAPI + PostgreSQL backend using Docker Compose, connecting the existing
+                        service to a real Postgres database through a repository layer, with zero changes to the API or
+                        business logic. Proved data persists across a full container restart.
+                    </li>
                 </ul>
             </div>
         </div>
