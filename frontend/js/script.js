@@ -105,20 +105,23 @@ document.addEventListener('DOMContentLoaded', () => {
         axiomatTrigger.style.display = 'flex';
         document.body.style.overflow = '';
     });
-
     function addMessage(text, sender) {
         const msg = document.createElement('div');
         msg.className = sender === 'user' ? 'axiomat-msg axiomat-msg-user' : 'axiomat-msg axiomat-msg-bot';
         msg.textContent = text;
         axiomatBody.appendChild(msg);
         axiomatBody.scrollTop = axiomatBody.scrollHeight;
+        return msg; // now returns the created element so we can remove it later
     }
 
     async function sendMessage(text) {
         if (!text.trim()) return;
         addMessage(text, 'user');
         axiomatInput.value = '';
-        axiomatInput.style.height = 'auto'; // reset the textarea height after sending
+        axiomatInput.style.height = 'auto';
+
+        const thinkingMsg = addMessage('Axiomat AI is thinking...', 'bot');
+        thinkingMsg.classList.add('axiomat-thinking'); // so we can style it differently if we want
 
         try {
             const response = await fetch('https://aremu-portfolio.onrender.com/chat', {
@@ -128,9 +131,11 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             const data = await response.json();
+            thinkingMsg.remove(); // remove "thinking..." bubble
             addMessage(data.reply, 'bot');
         } catch (error) {
             console.error('Axiomat AI request failed:', error);
+            thinkingMsg.remove();
             addMessage("Sorry, I'm having trouble connecting right now. Please try again.", 'bot');
         }
     }
