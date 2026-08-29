@@ -92,7 +92,7 @@ body {
 }
 
 .navbar.scrolled {
-    background: transparent;
+    background: rgba(10, 10, 10, 0.6);
     border-bottom-color: transparent;
     backdrop-filter: blur(6px);
     /* keeps text readable even when transparent */
