@@ -961,3 +961,19 @@ body {
 #contact {
     min-height: 74vh;
 }
+
+#contact .section-title {
+    font-size: 38px;
+}
+
+#contact .section-subtitle {
+    font-size: 16px;
+}
+
+#contact .btn-outline {
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    border-color: #4ade9c;
+    color: #f2f0ea;
+}
