@@ -91,6 +91,13 @@ body {
     cursor: pointer;
 }
 
+.navbar.scrolled {
+    background: transparent;
+    border-bottom-color: transparent;
+    backdrop-filter: blur(6px);
+    /* keeps text readable even when transparent */
+}
+
 /* Hero */
 .hero {
     display: flex;
