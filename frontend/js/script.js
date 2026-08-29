@@ -178,13 +178,27 @@ document.addEventListener('DOMContentLoaded', () => {
         openAxiomatPanel();
     });
 
+    let lastScrollY = window.scrollY;
+
     window.addEventListener('scroll', () => {
         const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 10) {
+        const currentScrollY = window.scrollY;
+
+        // existing transparent-on-scroll logic
+        if (currentScrollY > 10) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
+
+        // new: hide on scroll down, show on scroll up (mobile only, handled by CSS media query above)
+        if (currentScrollY > lastScrollY && currentScrollY > 80) {
+            navbar.classList.add('nav-hidden'); // scrolling down
+        } else {
+            navbar.classList.remove('nav-hidden'); // scrolling up
+        }
+
+        lastScrollY = currentScrollY;
     });
 
 });

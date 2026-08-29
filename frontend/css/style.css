@@ -98,6 +98,16 @@ body {
     /* keeps text readable even when transparent */
 }
 
+@media (max-width: 640px) {
+    .navbar {
+        transition: transform 0.3s ease;
+    }
+
+    .navbar.nav-hidden {
+        transform: translateY(-100%);
+    }
+}
+
 /* Hero */
 .hero {
     display: flex;
