@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --color-bg: #0a0a0a;
     --color-text: #f2f0ea;
@@ -743,6 +747,26 @@ body {
     margin: 6px 0 0;
 }
 
+#contact {
+    min-height: 74vh;
+}
+
+#contact .section-title {
+    font-size: 38px;
+}
+
+#contact .section-subtitle {
+    font-size: 16px;
+}
+
+#contact .btn-outline {
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    border-color: #d3e2db;
+    color: #f2f0ea;
+}
+
 .site-footer {
     background: #050505;
     border-top: 0.5px solid #262626;
@@ -973,24 +997,4 @@ body {
 
 .axiomat-panel[hidden] {
     display: none;
-}
-
-#contact {
-    min-height: 74vh;
-}
-
-#contact .section-title {
-    font-size: 38px;
-}
-
-#contact .section-subtitle {
-    font-size: 16px;
-}
-
-#contact .btn-outline {
-    padding: 12px 28px;
-    font-size: 14px;
-    font-weight: 600;
-    border-color: #d3e2db;
-    color: #f2f0ea;
 }
