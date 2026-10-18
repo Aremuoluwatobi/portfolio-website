@@ -3,7 +3,7 @@ experience = [
         "id": "flyrank",
         "role": "Backend AI Engineering Intern",
         "company": "FlyRank AI",
-        "period": "Present",
+        "period": "completed",
         "location": "Remote",
         "points": [
             "Built and deployed a full CRUD REST API in FastAPI, then migrated storage from in-memory to a real SQLite database with zero change to API behavior.",
